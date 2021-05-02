@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<questions>
+    <question>
+        <text>What is the color of the sky?</text>
+        <options>
+            <option>blue</option>
+            <option>green</option>
+            <option>grey</option>
+            <option>purple</option>
+        </options>
+        <answer>blue</answer>
+    </question>
+    <question>
+        <text>Who is the author of The Meditations</text>
+        <options>
+            <option>Socrates</option>
+            <option>Marcus Aurelius</option>
+            <option>Epictetus</option>
+            <option>Pluto</option>
+        </options>
+        <answer>Marcus Aurelius</answer>
+    </question>
+</questions>
+
+ 

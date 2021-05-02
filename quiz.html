@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src='script.js'></script>
+    <title>Quiz Game</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        input{
+            color: transparent;
+            text-shadow: 0 0 0 #2196f3;
+        }
+
+        body {
+            background-color:rgb(20, 20, 20);
+            color: white;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        .head {
+            text-align: center;
+            padding: 20px;
+            border-bottom: 1px solid #460080;
+            margin-bottom: 30px;
+        }
+
+        .card-container{
+            padding: 60px;
+        }
+
+        .card {
+            margin: auto;
+            border-top: 3px solid rgb(81, 255, 0);
+            background-image: linear-gradient(to bottom,
+                rgb(39, 1, 61),
+                rgb(15, 0, 41)
+            );
+            max-width: 900px;
+            padding: 30px;
+        }
+        .title{
+            text-align: center;
+            font-size: 1.1em;
+            padding: 10px;
+        }
+
+        .question-container, .answer-items {
+            padding: 20px;
+            font-size: 1.3em;
+        }
+
+        .question-container {
+            margin-top: 20px;
+        }
+
+        .question{
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        .answer-items {
+            
+            list-style: none;
+        }
+
+        .answer-item {   
+            cursor: default;         
+            padding: 15px;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            border-radius: 5px;
+            box-sizing: border-box;
+            height: 60px;
+
+            background-image: linear-gradient(to right,
+                rgb(165, 9, 170) 0%,
+                rgb(94, 8, 134) 50%,
+                rgb(49, 129, 11) 50%,
+                rgb(83, 184, 36) 100%
+            );
+            background-size: 200% 100%;
+            background-repeat: no-repeat;
+            background-position: 0% 100%;
+            
+            transition: all .2s ease;
+            /* transition: height .2s ease; */
+        }
+
+        .selected {
+            height: 70px;
+            background-position: 100% 0%;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        #submit {
+            margin: 0 20px 30px 20px;
+            padding: 15px;
+            width: 200px;
+            font-size: 1em;
+            border-radius: 10px;
+            color: black;
+            font-weight: bold;
+            border: none;
+            outline: none;
+
+            background-image: linear-gradient(to right,
+                rgb(49, 129, 11),
+                rgb(83, 184, 36)
+            );
+            background-repeat: no-repeat;
+            /* background-color: rgb(83, 184, 36); */
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="head"><h1 id="title">Quiz Game</h1></div>
+    <div class="card-container">
+        <div class="card">
+            <div class="title-container"><p class="title">Question 1</p></div>
+            <div class="question-container">
+                <p class="question">What is the color of the sky?</p>
+            </div>
+            <div class="answer-container">
+                <ul class="answer-items">
+                    <li class="answer-item selected">Green</li>
+                    <li class="answer-item">Blue</li>
+                    <li class="answer-item">Yellow</li>
+                    <li class="answer-item">Purple</li>
+                </ul>
+            </div>
+            <div class="button-container">
+                <button id="submit">Submit</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
